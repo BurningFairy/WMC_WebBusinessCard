@@ -1,8 +1,48 @@
-body {
-    background-color: blue;
-    color: blueviolet;
+html, body {
+  height: 100%;
 }
 
-title {
-    color: blueviolet;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+
+  background-image: url("../../assets/solidcolor.jpg");
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 12px;
+  text-decoration: none;
+  color: #222;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+main a {
+    color: black;
+}
+
+main a:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
 }

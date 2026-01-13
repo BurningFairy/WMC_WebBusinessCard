@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>My School Project - Home</title>
-    <link rel="steylesheet" href="css/index_styles.css">
+    <link rel="stylesheet" href="css/index_styles.css">
+    <link rel="stylesheet" href="css/catclicker.css">
+    <script src="js/catclicker.js" defer></script>
     <script src="js/app.js"></script>
 </head>
 
 <body>
 
+<center>
 <header>
     <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="mypets.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="mypets.html">My Pets</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
+</center>
 
 <main>
     <center>
-    <h1 class="title">Business Card</h1>
+    <h1 class="title">About me, myself and I</h1>
     <h2 class="name">Irina Karner</h2>
-
-    <br>
-
-    <img class="pic" src="https://images.squarespace-cdn.com/content/v1/66a915244ca56a48947821db/2049fd2b-b6f1-40ff-89f7-76c85cf287e8/Odie.jpg"
-    alt="Cartoon dog" width="150" height="200">
     </center>
 
     <center>
@@ -72,10 +71,14 @@
 
 </main>
 
+<div class="catClicker">
+    <div id="cat"><img src="../assets/cat.png"></div>
+    <div id="clickCounter">Clicks: 0</div>
+</div>
+
 <footer>
     <p>© BurningFairy</p>
 </footer>
-
 
 </body>
 </html>

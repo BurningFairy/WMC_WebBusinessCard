@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <title>My School Project - Contact</title>
     <link rel="stylesheet" href="css/contact_styles.css">
+    <link rel="stylesheet" href="css/catclicker.css">
+    <script src="js/catclicker.js" defer></script>
+    <script src="js/validate.js" defer></script>
 </head>
 
 <body>
 
+<center>
 <header>
     <h1>Welcome to My Website</h1>
     <nav>
         <a href="index.html">Home</a>
-        <a href="mypets.html">About</a>
+        <a href="mypets.html">My Pets</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
+</center>
 
 <main>
 
-<form>
+<form id="contactForm" novalidate>
+  <fieldset class="questions">
+    <label for="hasPets">Do you have pets?</label>
+    <input id="hasPets" name="hasPets" type="checkbox">
+
+    <br><br>
+
+    <label for="petNum">How many pets do you have?</label>
+    <input id="petNum" name="petNum" type="number" min="0" max="100" value="0">
+  </fieldset>
+
+  <fieldset class="messages">
+    <label for="msg">Tell me about your Pets!</label> <br>
+    <input id="msg" name="msg" type="text" minlength="10" maxlength="500" required>
+  </fieldset>
+
+  <fieldset class="contact">
+    <label for="name">Your name:</label>
+    <input id="name" name="name" type="text" maxlength="100" required>
+
+    <br>
+
+    <label for="mail">Your email:</label>
+    <input id="mail" name="mail" type="email" maxlength="100" required>
+  </fieldset>
+
+  <button type="submit">Send</button>
+
+  <p id="formError" class="error"></p>
 </form>
 
 </main>
+
+<div class="catClicker">
+    <div id="cat"><img src="../assets/cat.png"></div>
+    <div id="clickCounter">Clicks: 0</div>
+</div>
 
 <footer>
     <p>© BurningFairy</p>
 </footer>
 
 </body>
+</html>
