@@ -1,5 +1,6 @@
 // logic for Cat clicker, with persistent counter across all pages
 
+// wait until all DOM elements have loaded
 document.addEventListener("DOMContentLoaded", () => {
   // get the html elements for the cat and the counter into a variable
   const cat = document.getElementById("cat");
