@@ -1,11 +1,11 @@
 /* Cat clicker widget */
 .catClicker {
   position: fixed;
-  left: 0;
   right: 0;
   bottom: 30px;
 
-  width: 180px;
+  width: 220px;
+  height: 300px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -17,16 +17,9 @@
   font-family: Arial, sans-serif;
 }
 
-#cat {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-}
-
 #cat img {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -43,7 +36,7 @@
   font-weight: 700;
 
   background: rgb(255, 255, 255);
-  border: 1px solid rgb(209, 187, 208);
+  border: 1px solid rgb(153, 133, 152);
   border-radius: 999px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
