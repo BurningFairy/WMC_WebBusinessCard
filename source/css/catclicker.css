@@ -1,6 +1,6 @@
 /* Cat clicker widget */
 .catClicker {
-  position: fixed;
+  position: relative;
   right: 0;
   bottom: 30px;
 
