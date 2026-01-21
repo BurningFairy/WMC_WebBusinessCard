@@ -1,27 +1,22 @@
 /* Cat clicker widget */
 .catClicker {
   position: relative;
-  right: 0;
   bottom: 30px;
 
   width: 220px;
   height: 300px;
-  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-
-  border-radius: 12px;
   z-index: 9999;
 
   font-family: Arial, sans-serif;
 }
 
 #cat img {
+  display: block;
   width: 220px;
   height: 220px;
   object-fit: cover;
-  display: block;
   margin: 0 auto;
 }
 
